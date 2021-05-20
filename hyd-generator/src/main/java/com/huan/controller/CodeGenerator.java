@@ -2,10 +2,7 @@ package com.huan.controller;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.GlobalConfig;
-import com.baomidou.mybatisplus.generator.config.PackageConfig;
-import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
@@ -72,6 +69,18 @@ public class CodeGenerator {
         return strategyConfig;
     }
 
+    //04配置模板
+    public static TemplateConfig templateConfig() {
+        TemplateConfig templateConfig = new TemplateConfig();
+        templateConfig.setEntity("templates/entity.java");
+        //templateConfig.setController();
+        //templateConfig.setService();
+        //templateConfig.setServiceImpl();
+        //templateConfig.setMapper();
+        //templateConfig.setXml()
+        return templateConfig;
+    }
+
     public static void main(String[] args) {
         //创建generator对象
         AutoGenerator autoGenerator = new AutoGenerator();
@@ -83,6 +92,8 @@ public class CodeGenerator {
         autoGenerator.setPackageInfo(packageConfig());
         //配置策略
         autoGenerator.setStrategy(strategyConfig());
+        //配置模板（还不熟练，配置失败）
+        //autoGenerator.setTemplate(templateConfig());
         //去吧皮卡丘
         autoGenerator.execute();
     }
