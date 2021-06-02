@@ -1,4 +1,4 @@
-package com.huan.controller;
+package com.huan.interceptor.controller;
 
 import com.huan.entity.MemberPoJo;
 import org.springframework.validation.annotation.Validated;

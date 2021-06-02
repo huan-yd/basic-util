@@ -1,4 +1,4 @@
-package com.huan.controller;
+package com.huan.interceptor.controller;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;

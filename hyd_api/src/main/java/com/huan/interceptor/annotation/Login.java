@@ -1,4 +1,4 @@
-package com.huan.annotation;
+package com.huan.interceptor.annotation;
 
 import java.lang.annotation.*;
 

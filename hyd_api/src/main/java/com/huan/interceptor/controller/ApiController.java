@@ -1,6 +1,6 @@
-package com.huan.controller;
+package com.huan.interceptor.controller;
 
-import com.huan.annotation.Login;
+import com.huan.interceptor.annotation.Login;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
