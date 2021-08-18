@@ -7,10 +7,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @Author YueDong Huan
- * @Date 2021/5/26
- * @Email huanyued@163.com
+/*
+ * 树结构工具类
+ * @author YueDong Huan
+ * @date 2021/8/18 14:52
+ * @version 1.0
  */
 public class TreeUtils {
 

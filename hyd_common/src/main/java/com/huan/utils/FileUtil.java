@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 /**
+ * 文件工具类
  * @Author YueDong Huan
  * @Date 2021/7/7
  * @Email huanyued@163.com

@@ -3,12 +3,11 @@ package com.huan.utils;
 
 import com.huan.enums.MsgCommonEnum;
 
-/**
+/*
  * 消息通用类
- *
- * @author lzh
- * @version V2.0
- * @since JDK 1.7
+ * @author YueDong Huan
+ * @date 2021/8/18 14:52
+ * @version 1.0
  */
 public class MsgUtil {
 

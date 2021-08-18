@@ -16,11 +16,17 @@ public class CodeGenerator {
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL);
         /**************这里请填写你的ip和你的端口号及数据库名称**************/
-        dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/yue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
+        //dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/yue?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
+        /*泉州*/
+        dataSourceConfig.setUrl("jdbc:mysql://47.103.216.221:30017/gbf2quanzhou?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false");
         /**************您的账号**************/
-        dataSourceConfig.setUsername("root");
+        /*泉州*/
+        dataSourceConfig.setUsername("union_1");
+        //dataSourceConfig.setUsername("root");
         /**************您的密码**************/
-        dataSourceConfig.setPassword("wojia");
+        /*泉州*/
+        dataSourceConfig.setPassword("1qaz@WSX");
+        //dataSourceConfig.setPassword("wojia");
         //您的数据库引擎
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         return dataSourceConfig;
@@ -44,9 +50,9 @@ public class CodeGenerator {
     public static PackageConfig packageConfig() {
         PackageConfig packageConfig = new PackageConfig();
         /**************父级包名**************/
-        packageConfig.setParent("com.jia");
+        packageConfig.setParent("com.gobestsoft");
         //父级包名称
-        packageConfig.setModuleName("generator");
+        packageConfig.setModuleName("icon");
         packageConfig.setController("controller");
         packageConfig.setService("service");
         packageConfig.setServiceImpl("service.impl");
@@ -65,7 +71,7 @@ public class CodeGenerator {
         //同上
         strategyConfig.setColumnNaming(NamingStrategy.underline_to_camel);
         /**************要生成的表名**************/
-        strategyConfig.setInclude("member_info");
+        strategyConfig.setInclude("cms_icon");
         return strategyConfig;
     }
 
@@ -77,7 +83,7 @@ public class CodeGenerator {
         //templateConfig.setService();
         //templateConfig.setServiceImpl();
         //templateConfig.setMapper();
-        //templateConfig.setXml()
+        //templateConfig.setXml();
         return templateConfig;
     }
 

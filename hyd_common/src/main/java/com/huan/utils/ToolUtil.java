@@ -23,8 +23,11 @@ import java.util.*;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
-/**
+/*
  * 高频方法集合类
+ * @author YueDong Huan
+ * @date 2021/8/18 14:52
+ * @version 1.0
  */
 public class ToolUtil {
 
@@ -602,7 +605,9 @@ public class ToolUtil {
 
     public static void transferKey(List<Map<String,Object>> list){
 
-        if(list==null||list.size()==0)return;
+        if(list==null||list.size()==0) {
+            return;
+        }
         list.forEach((Map map )->{
             Iterator<Entry<String, Object>> iterator = map.entrySet().iterator();
             Map temp = new HashMap();
@@ -929,10 +934,5 @@ public class ToolUtil {
         String reg = "1[3-9]{1}[0-9]{9}";
         boolean matches = Pattern.matches(reg, mobile);
         return matches;
-    }
-
-    public static void main(String[] args) {
-        //System.out.println(validateMobile("19990928374"));
-        System.out.println(validCertificateNum("36250119620124041X"));
     }
 }

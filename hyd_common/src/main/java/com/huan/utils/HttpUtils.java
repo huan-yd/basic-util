@@ -34,9 +34,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-/**
- * @author WeiLin Huang
- * */
+/*
+ * http请求工具类
+ * @author YueDong Huan
+ * @date 2021/8/18 14:51
+ * @version 1.0
+ */
 @Slf4j
 public class HttpUtils {
 

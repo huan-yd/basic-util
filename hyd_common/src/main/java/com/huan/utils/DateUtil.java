@@ -5,10 +5,11 @@ import org.apache.commons.lang3.time.DateFormatUtils;
 
 import java.util.Date;
 
-/**
- * @Author YueDong Huan
- * @Date 2021/7/7
- * @Email huanyued@163.com
+/*
+ * 时间工具类
+ * @author YueDong Huan
+ * @date 2021/8/18 10:07
+ * @version 1.0
  */
 public class DateUtil {
 
